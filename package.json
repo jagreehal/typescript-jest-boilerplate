@@ -1,7 +1,7 @@
 {
   "name": "typescript-jest-boilerplate",
   "version": "1.0.0",
-  "description": "Boilerplate for Tpescript and Jest",
+  "description": "Boilerplate for Typescript and Jest",
   "scripts": {
     "test": "jest"
   },
