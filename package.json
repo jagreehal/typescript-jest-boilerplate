@@ -1,0 +1,35 @@
+{
+  "name": "typescript-jest-boilerplate",
+  "version": "1.0.0",
+  "description": "Boilerplate for Tpescript and Jest",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^19.2.2",
+    "jest": "^19.0.2",
+    "ts-jest": "^19.0.2",
+    "typescript": "^2.2.1"
+  },
+   "jest": {
+    "globals": {
+      "__TS_CONFIG__": {
+        "module": "commonjs",
+        "jsx": "react"
+      }
+    },
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ],
+    "transform": {
+      ".(ts|tsx)": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    },
+    "testMatch": [
+      "**/*.spec.(ts|tsx)"
+    ]
+  }
+}
