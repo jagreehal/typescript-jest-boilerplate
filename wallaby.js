@@ -29,7 +29,8 @@ module.exports = function (wallaby) {
         },
         compilers: {
             "**/*.ts*": wallaby.compilers.typeScript({
-                typescript: require("typescript")
+                typescript: require("typescript"),
+                module: "commonjs"
             })
         },
         testFramework: "jest",

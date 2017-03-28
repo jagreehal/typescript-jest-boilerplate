@@ -3,15 +3,16 @@
   "version": "1.0.0",
   "description": "Boilerplate for Typescript and Jest",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "test:w": "jest --watch"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@types/jest": "^19.2.2",
     "jest": "^19.0.2",
-    "ts-jest": "^19.0.2",
-    "typescript": "^2.2.1"
+    "ts-jest": "^19.0.6",
+    "typescript": "^2.2.2"
   },
    "jest": {
     "globals": {
