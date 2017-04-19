@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "Boilerplate for Typescript and Jest",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "test:w": "jest --watch"
   },
   "author": "",
   "license": "ISC",
