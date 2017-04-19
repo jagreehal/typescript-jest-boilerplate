@@ -12,7 +12,7 @@ module.exports = function (wallaby) {
         files: files({
                 ext: "ts*"
             })
-            .concat(['package.json'])
+            .concat(['package.json', 'tsconfig.json'])
             .concat(files({
                 ext: "snap"
             }))
@@ -29,7 +29,8 @@ module.exports = function (wallaby) {
         },
         compilers: {
             "**/*.ts*": wallaby.compilers.typeScript({
-                typescript: require("typescript")
+                typescript: require("typescript"),
+                module: 'commonjs'
             })
         },
         testFramework: "jest",
