@@ -15,7 +15,7 @@
     "typescript": "^2.3.2"
   },
   "jest": {
-  "moduleFileExtensions": [
+    "moduleFileExtensions": [
       "ts",
       "tsx",
       "js"
