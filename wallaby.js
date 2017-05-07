@@ -9,10 +9,11 @@ const files = ({
 module.exports = function (wallaby) {
     return {
         debug: true,
-        files: files({
+        files: 
+            ['package.json', 'tsconfig.json'].concat
+            (files({
                 ext: "ts*"
-            })
-            .concat(['package.json', 'tsconfig.json'])
+            }))
             .concat(files({
                 ext: "snap"
             }))
