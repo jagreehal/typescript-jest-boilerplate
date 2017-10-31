@@ -9,10 +9,10 @@
   "author": "Jag Reehal",
   "license": "ISC",
   "devDependencies": {
-    "@types/jest": "^19.2.3",
-    "jest": "^20.0.0",
-    "ts-jest": "^20.0.0",
-    "typescript": "^2.3.2"
+    "@types/jest": "^21.1.5",
+    "jest": "^21.2.1",
+    "ts-jest": "^21.1.4",
+    "typescript": "^2.5.3"
   },
   "jest": {
     "moduleFileExtensions": [
