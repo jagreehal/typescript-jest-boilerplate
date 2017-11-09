@@ -10,21 +10,22 @@
   "license": "ISC",
   "devDependencies": {
     "@types/jest": "^21.1.5",
+    "@types/node": "^8.0.50",
+    "@types/source-map-support": "^0.4.0",
     "jest": "^21.2.1",
-    "ts-jest": "^21.1.4",
-    "typescript": "^2.5.3"
+    "prettier": "^1.8.2",
+    "ts-jest": "21.2.1",
+    "tslint": "^5.8.0",
+    "tslint-config-airbnb": "5.3.0",
+    "tslint-config-prettier": "^1.6.0",
+    "typescript": "^2.6.1"
   },
   "jest": {
-    "moduleFileExtensions": [
-      "ts",
-      "tsx",
-      "js"
-    ],
+    "moduleFileExtensions": ["ts", "tsx", "js"],
     "transform": {
       ".(ts|tsx)": "<rootDir>/node_modules/ts-jest/preprocessor.js"
     },
-    "testMatch": [
-      "**/*.spec.(ts|tsx)"
-    ]
+    "testMatch": ["**/*.spec.(ts|tsx)"],
+    "coveragePathIgnorePatterns": ["/node_modules/", "**/*.spec.(ts|tsx)"]
   }
 }
