@@ -4,19 +4,19 @@
   "description": "Boilerplate for Typescript and Jest",
   "scripts": {
     "test": "jest",
-    "test:w": "jest --watch"
+    "test-watch": "jest --watch"
   },
   "author": "Jag Reehal",
   "license": "ISC",
   "devDependencies": {
-    "@types/jest": "^21.1.5",
-    "@types/node": "^8.0.50",
+    "@types/jest": "^21.1.6",
+    "@types/node": "^8.0.53",
     "@types/source-map-support": "^0.4.0",
     "jest": "^21.2.1",
     "prettier": "^1.8.2",
-    "ts-jest": "21.2.1",
+    "ts-jest": "21.2.3",
     "tslint": "^5.8.0",
-    "tslint-config-airbnb": "5.3.0",
+    "tslint-config-airbnb": "5.4.2",
     "tslint-config-prettier": "^1.6.0",
     "typescript": "^2.6.1"
   },
@@ -26,6 +26,13 @@
       ".(ts|tsx)": "<rootDir>/node_modules/ts-jest/preprocessor.js"
     },
     "testMatch": ["**/*.spec.(ts|tsx)"],
-    "coveragePathIgnorePatterns": ["/node_modules/", "**/*.spec.(ts|tsx)"]
+    "testEnvironment": "node",
+    "testPathIgnorePatterns": ["node_modules/", "dist"],
+    "coveragePathIgnorePatterns": [
+      "node_modules/",
+      "dist",
+      "**/*.spec.(ts|tsx)"
+    ],
+    "coverageReporters": ["lcov", "html"]
   }
 }
