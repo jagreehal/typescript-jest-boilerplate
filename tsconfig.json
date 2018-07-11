@@ -8,9 +8,11 @@
         "lib": ["es6", "dom"],
         "noImplicitAny": true,
         "noEmit": true,
-        "sourceMap": true
+        "sourceMap": true,
+        "outDir": "dist"
     },
     "exclude": [
-        "node_modules"
+        "node_modules",
+        "dist"
     ]
 }
