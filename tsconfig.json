@@ -7,7 +7,6 @@
         "module": "commonjs",
         "lib": ["es6", "dom"],
         "noImplicitAny": true,
-        "noEmit": true,
         "sourceMap": true,
         "outDir": "dist"
     },
