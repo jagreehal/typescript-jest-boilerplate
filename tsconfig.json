@@ -1,14 +1,16 @@
 {
     "compileOnSave": false,
-    "compilerOptions": {
+    "compilerOptions": {        
         "moduleResolution": "node",
         "jsx": "react",
         "target": "es2017",
         "module": "commonjs",
         "lib": ["es6", "dom"],
-        "noImplicitAny": true,
+        "noImplicitAny": false,
         "sourceMap": true,
-        "outDir": "dist"
+        "outDir": "dist",
+            "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true    
     },
     "exclude": [
         "node_modules",

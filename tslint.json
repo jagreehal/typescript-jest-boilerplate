@@ -7,5 +7,7 @@
         "singleQuote": true
       }
     ]
-  }
+  },
+  "import-name": false,
+  "variable-name": false
 }
