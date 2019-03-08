@@ -1,1 +1,1 @@
-# node-memoization-example
+My boilerplate of creating typescript examples using jest for tests
